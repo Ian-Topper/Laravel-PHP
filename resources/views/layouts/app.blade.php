@@ -3,11 +3,14 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        <link rel="stylesheet" href="{{asset('css/app.css')}}">
         <title>{{config('app.name', 'Ian Topper')}}</title>
 
     </head>
     <body>
-       @yeild('content')
+        @include('inc.navb')
+        <div class="container">
+       @yield('content')
+        </div>
     </body>
 </html>
